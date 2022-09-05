@@ -1,0 +1,82 @@
+body{
+  background-color: white;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.player-container {
+
+  text-align: center
+}
+
+img{
+  border-radius: 20px
+}
+.progress-container {
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 40px 20px;
+  height: 4px;
+  width: 450px;
+  position: relative;
+  left: 380px;
+}
+
+.progress {
+  background: #242323;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+.duration-wrapper {
+  position: relative;
+  top: -25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Controls */
+.player-controls {
+  position: relative;
+  top: 20px;
+  left: 525px;
+  width: 200px;
+}
+.bg-container {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+  z-index: -1;
+}
+
+.bg-container img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+  filter: blur(15px);
+  -webkit-filter: blur(50px);
+  transform: scale(1.1); 
+}
+.fa-backward{
+  margin-right: 30px;
+  cursor: pointer;
+  
+}
+.fa-forward{
+  margin-left: 30px;
+  cursor: pointer
+}
+.fa-play{
+  cursor: pointer
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
